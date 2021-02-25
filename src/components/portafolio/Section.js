@@ -1,11 +1,13 @@
 import React,{useEffect, useRef} from 'react';
 import {TimelineLite ,TweenMax, Power3} from 'gsap';
 
-import arrow from '../../images/arrow-right.svg';
-import imgGirl from '../../images/girl.webp';
-import imgBoy from '../../images/boy.webp';
+//import arrow from '../../images/arrow-right.svg';
+// import imgGirl from '../../images/girl.webp';
+//import imgBoy from '../../images/boy.webp';
 
-
+const arrow = 'https://raw.githubusercontent.com/victorflores04/portafilio/main/src/images/arrow-right.svg';
+const imgGirl ='https://i.imgur.com/K12EECp.jpg';
+const imgBoy ='https://i.imgur.com/K2fTz8e.jpg';
 export const Section = () => {
 
     let app = useRef(null);

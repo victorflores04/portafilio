@@ -2,7 +2,7 @@ import React,{ useEffect, useRef } from 'react'
 import worked from '../images/nicole.webp';
 import { TimelineLite, Power2 } from "gsap";
 import CSSRulePlugin from "gsap/CSSRulePlugin";
-
+import { Banner } from './portafolio/Banner';
 
 export const Screen = () => {
 
@@ -18,25 +18,24 @@ export const Screen = () => {
     })
 
     return (
-        <div className="container__screen">
-            <div className="testimonial-section">
-            <div className="testimonial-container">
-            <div className="inner">
+        <div className="container">
+            <div className="container__screen">
+                <div className="testimonial-section">
             <div className="main-p"><a  href="https://victorflores04.github.io/screen/">MIKHAILA PETERSON</a></div>
             <section>
                 <div ref={el=> containerScreen= el} className="container-screen">
                     <>
                     <div className="img-container" >
-                    <a href="https://victorflores04.github.io/screen/"><img ref={el=> image= el}  src="https://i.imgur.com/zH8RBgq.png" /></a>
-                        
+                    <a href="https://victorflores04.github.io/screen/"><img ref={el=> image= el}  src="https://i.imgur.com/zH8RBgq.png" /></a>    
                     </div>
                     </>
                 </div>
             </section>
             </div>
             </div>
-            </div>
+            <Banner/>
         </div>
+        
         
         
     )

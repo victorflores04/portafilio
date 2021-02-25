@@ -1,0 +1,60 @@
+//Banner
+.banner {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    position: relative;
+    height: 0.5%;
+    .row {
+      position: relative;
+      .main-text {
+        font-weight: 600;
+        font-size: 0.875rem;
+        letter-spacing: 1.5px;
+        }
+      .main-image {
+        width: 436px;
+        margin: 0 auto;
+        img{
+            width: 436px;
+        }
+      }
+      .side-image {
+        width: 260px;
+        position: absolute;
+        @media (max-width: 1440px) {
+          width: 208px;
+        }
+        &.left {
+          left: 168px;
+          top: 12px;
+          img{
+            width: 260px;
+          }
+          @media (max-width: 1440px) {
+            left: 128px;
+          }
+        }
+        &.right {
+          right: 168px;
+          bottom: 12px;
+          img{
+            width: 200px;
+          }
+          @media (max-width: 1440px) {
+            right: 128px;
+          }
+        }
+      }
+    }
+    .scroll {
+        font-weight: 700;
+        font-size: 0.875rem;
+        letter-spacing: 1.5px;
+        transform: rotate(-90deg);
+        color: $black;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 2px;
+      }
+}

@@ -3,12 +3,17 @@ import { Link } from 'react-router-dom'
 import gsap from 'gsap';
 
 
-import ecommerce from '../images/ecommerce.jpg';
-import uxui from '../images/ux-ui.jpg';
-import appmovile from '../images/app-movile.jpg';
-import marketing from '../images/marketing.jpg';
-import seo from '../images/seo.jpg';
+//import ecommerce from '../images/ecommerce.jpg';
+// import uxui from '../images/ux-ui.jpg';
+// import appmovile from '../images/app-movile.jpg';
+// import marketing from '../images/marketing.jpg';
+// import seo from '../images/seo.jpg';
 
+const ecommerce = 'https://i.imgur.com/e10JqIl.jpg';
+const uxui = 'https://i.imgur.com/9kWPZSD.jpg';
+const appmovile = 'https://i.imgur.com/HVROYfh.jpg';
+const marketing = 'https://i.imgur.com/CI58Axe.jpg';
+const seo = 'https://i.imgur.com/t2T5z8v.jpg';
 
 const cities=[
     {name: 'E-commerce', image:ecommerce},

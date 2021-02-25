@@ -1,8 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
 import { TweenLite, Power3 } from "gsap";
 
-import rightArrow from '../images/assets/arrow-right.svg';
-import leftArrow from '../images/assets/arrow-left.svg';
+// import rightArrow from '../images/assets/arrow-right.svg';
+// import leftArrow from '../images/assets/arrow-left.svg';
+const rightArrow = 'https://raw.githubusercontent.com/victorflores04/portafilio/main/src/images/assets/arrow-right.svg'
+const leftArrow  ='https://raw.githubusercontent.com/victorflores04/portafilio/main/src/images/assets/arrow-left.svg';
 
 const testimonials = [
     {
