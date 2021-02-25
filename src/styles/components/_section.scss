@@ -1,0 +1,163 @@
+
+.hero{
+    visibility: hidden;
+    height: 100vh;
+    .container-hero{
+        background: white;
+        width: 1280px;
+        min-width: 1280px;
+        margin: 0 auto;
+        .hero-inner{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 24px;
+            height: 100vh;
+            .hero-content{
+                width: 50%;
+                .hero-content-inner{
+                    width: 400px;
+                    margin: 0 auto;
+                    color: #323232;
+                    h1{
+                        font-weight: 500;
+                        font-size: 32px;
+                        margin-bottom: 24px;
+                        .hero-content-line{
+                            margin: 0;
+                            height: 44px;
+                            overflow: hidden;
+                            .hero-content-line-inner-dot{
+                                margin: 0;
+                                height: 44px;
+                                font-weight: 700;
+                                letter-spacing: 0.4rem;
+                                color: mediumblue;
+                                overflow: hidden;  
+                            }
+                        }
+                        .hero-content-line{
+                            margin: 0;
+                            height: 44px;
+                            overflow: hidden;
+                            .hero-content-line-title{
+                                margin: 0;
+                                height: 44px;
+                                overflow: hidden;
+                                font-weight: 600;
+                                color: black;
+                            }
+                        }
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 24px;
+                        font-weight: 300;
+                        padding-right: 48px;
+                        margin-bottom: 56px;
+
+                    }
+                    .btn-row{
+                        position: relative;
+                        &::before{
+                            position: absolute;
+                            content: '';
+                            width: 56px;
+                            height: 1px;
+                            background: #dfdfdf;
+                            top: 50%;
+                            left:-68px;
+                        }
+                        button{
+                            background: none;
+                            border: none;
+                            font-size: 12px;
+                            padding: 0;
+                            cursor: pointer;
+                            text-transform: uppercase;
+                            font-weight: 700;
+                            letter-spacing: 0.7px;
+                            display: flex;
+                            align-items: center;
+                            position: relative;
+                            &:focus{
+                                outline: none;
+                            }
+                            .arrow-icon{
+                                position: absolute;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                background: #007fff;
+                                height: 24px;
+                                width: 45px;
+                                border-radius: 0px;
+                                left:110px;
+                            }
+                        }
+                    }
+                }
+            }
+        .hero-images{
+            width: 50%;
+            height: 100vh;
+            position: relative;
+            z-index: 3;
+            .hero-images-inner{
+                .hero-image{
+                    position: absolute;
+                    overflow: hidden;
+                    z-index: 2;
+                    &.girl{
+                        top: 0;
+                        right: 0;
+                        width: 45%;
+                        height: 50%;
+                    }
+                    &.boy{
+                        bottom: 24px;
+                        left: 0;
+                        width: 52%;
+                        height: 65%;
+                    }
+                    img{
+                        position: absolute;
+                        top:0;
+                        right: 0;
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .fixed-misc{
+            position: fixed;
+            top:50%;
+            right:-48px;
+            transform: rotate(-90deg);
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: .875rem;
+            letter-spacing: 1.5px;
+            color: wheat;
+            mix-blend-mode: difference;
+            z-index: 4;
+        }
+        }
+    }
+    .black-box{
+        background: black;
+        height: 386px;
+        width: 586px;
+        position: absolute;
+        right: 0;
+        top: 46%;
+        transform: translateY(-50%);
+        &.overlay{
+            z-index: 7;
+            background:mistyrose;
+            mix-blend-mode: overlay;
+        }
+    }
+}
