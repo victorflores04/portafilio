@@ -7,7 +7,7 @@ const Header = ({history}) => {
     const [state, setstate] = useState({
         initial:false,
         clicked: null,
-        menuName:"Menu",
+        menuName: "Menu",
     })
     //state for menu button
     const [disabled, setDisabled] = useState(false);
@@ -24,19 +24,19 @@ const Header = ({history}) => {
         disableMenu();
         if(state.initial === false){
             setstate({
-                initial:null,
+                initial: null,
                 clicked: true,
                 menuName: 'Close'
             });
             console.log(1)
-        }else if(state.clicked=== true){
+        }else if(state.clicked === true){
             setstate({
                 clicked: !state.clicked,
                 menuName: 'Menu'
             });
             console.log(2)
         }
-        else if(state.clicked=== false){
+        else if(state.clicked === false){
             setstate({
                 clicked: !state.clicked,
                 menuName: 'Close'
@@ -61,7 +61,7 @@ const Header = ({history}) => {
                             <Link to="/">victorFlores.</Link>
                         </div>
                         <div className="menu">
-                            <button disabled={disabled} onClick={handleMenu}> menu</button>
+                            <button disabled={disabled} onClick={handleMenu}>menu</button>
                         </div>
                     </div>
                 </div>

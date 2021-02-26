@@ -1,11 +1,9 @@
-import React,{ useEffect, useRef } from 'react'
-import worked from '../images/nicole.webp';
+import React,{ useEffect, useRef } from 'react';
 import { TimelineLite, Power2 } from "gsap";
 import CSSRulePlugin from "gsap/CSSRulePlugin";
 import { Banner } from './portafolio/Banner';
 
 export const Screen = () => {
-
 
     let containerScreen = useRef(null);
     let image = useRef(null);
@@ -26,7 +24,7 @@ export const Screen = () => {
                 <div ref={el=> containerScreen= el} className="container-screen">
                     <>
                     <div className="img-container" >
-                    <a href="https://victorflores04.github.io/screen/"><img ref={el=> image= el}  src="https://i.imgur.com/zH8RBgq.png" /></a>    
+                    <a href="https://victorflores04.github.io/screen/"><img ref={el=> image= el}  src="https://i.imgur.com/zH8RBgq.png" alt="sdsd" /></a>    
                     </div>
                     </>
                 </div>

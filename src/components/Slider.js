@@ -10,21 +10,21 @@ const testimonials = [
     {
       name: "Julia Cameron",
       title: "Creative Director, VISA",
-      image: 'https://i.imgur.com/4GlH53H.jpg',
+      image: 'https://i.imgur.com/IgNb1bY.jpg',
       quote:
         "It's all good. I was amazed at the quality of the Design. We've seen amazing results already."
     },
     {
       name: "Mark Jacobs",
-      title: "Tech Lead, Google",
-      image: 'https://i.imgur.com/ghCRvh6.jpg',
+      title: "Tech Lead, ",
+      image: 'https://i.imgur.com/r4fH2Jp.jpg',
       quote:
         "The rebranding has really helped our business. Definitely worth the investment."
     },
     {
       name: "Lisa Bearings",
-      title: "Brand Coordinator, Facebook",
-      image: 'https://i.imgur.com/0kd5ntK.jpg',
+      title: "Coordinator, Burguers",
+      image: 'https://i.imgur.com/kQQjGNo.jpg',
       quote:
         "The service was excellent. Absolutely wonderful! A complete redesign did it for us."
     }

@@ -1,4 +1,4 @@
-import React,{useEffect, useRef} from 'react';
+import React,{ useEffect, useRef} from 'react';
 import {TimelineLite ,TweenMax, Power3} from 'gsap';
 
 //import arrow from '../../images/arrow-right.svg';
@@ -14,8 +14,7 @@ export const Section = () => {
     let images = useRef(null);
     let content = useRef(null);
 
-    let tl= new TimelineLite({delay:.8})
-
+    let tl = new TimelineLite({delay:.8})
     useEffect(() => {
         //img vars
         const girlImage = images.firstElementChild;
@@ -47,7 +46,7 @@ export const Section = () => {
         },.15,'Start')
         .from(contentP,1,{y:20,opacity:0, ease:Power3.easeInOut,},1.4)
         .from(contentButton,1,{y:20,opacity:0, ease:Power3.easeInOut,},1.6)
-    },[tl])
+    });
 
     return (
         <div className= "hero" ref={el=>app=el}>
@@ -60,7 +59,7 @@ export const Section = () => {
                                 <div className="hero-content-line-title"> I'm Victor Flores - </div>
                             </div>
                             <div className="hero-content-line">
-                                <div className="hero-content-line-inner-dot"><a>UI/UX Designer</a> </div>
+                                <div className="hero-content-line-inner-dot" ><a  href="/">UI/UX Designer</a> </div>
                             </div>
                             <div className="hero-content-line">
                                 <div className="hero-content-line-inner"> &lt;coder&gt;</div>
@@ -68,7 +67,7 @@ export const Section = () => {
                             </h1>
                             <p> <b>Front End</b> developer who focuses on writing clean,elegant and eficient code.
                             </p>
-                            <div className="btn-row">
+                            <div className="btn-row" href="#">
                                 <button className="explore-button">
                                 LATEST WORK
                                     <div className="arrow-icon">
@@ -81,7 +80,7 @@ export const Section = () => {
                     <div className="hero-images">
                         <div className="hero-images-inner" ref={el=>images=el}>
                             <div className="hero-image girl">
-                                <img src={imgGirl} alt="images girl" />
+                                <img src={imgGirl} alt="images girl"/>
                             </div>
                             <div className="hero-image boy">
                                 <img src={imgBoy} alt="images boy" />

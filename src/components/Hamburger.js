@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import gsap from 'gsap';
 
-
 //import ecommerce from '../images/ecommerce.jpg';
 // import uxui from '../images/ux-ui.jpg';
 // import appmovile from '../images/app-movile.jpg';
@@ -50,7 +49,7 @@ export const Hamburger = ({state}) => {
                 css:{display:'none'}
             })
             // menu.style.display='none'
-        }else if(state.clicked === true||state.clicked === true && state.initial === null){
+        }else if(state.clicked === true ||( state.clicked === true && state.initial === null)){
             gsap.to(menu,{
                 duration: 0,
                 css:{display:'block'}
